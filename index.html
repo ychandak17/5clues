@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Five Clues</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="game-container">
+        <header>
+            <div class="stat-box">Score: <span id="score-display">0</span></div>
+            <div class="stat-box">Timer: <span id="timer-display">30</span>s</div>
+        </header>
+
+        <section id="setup-panel" class="panel active">
+            <div class="logo-container">
+                <span class="logo-number">5</span>
+                <h1 class="logo-text">Clues</h1>
+                <p class="tagline">Can you guess the answer?</p>
+            </div>
+
+            <div class="pill-container">
+                <div class="pill-group">
+                    <input type="radio" name="difficulty" id="diff-all" value="All" checked>
+                    <label for="diff-all" class="pill">Mixed</label>
+            
+                    <input type="radio" name="difficulty" id="diff-easy" value="Easy">
+                    <label for="diff-easy" class="pill">Easy</label>
+            
+                    <input type="radio" name="difficulty" id="diff-medium" value="Medium">
+                    <label for="diff-medium" class="pill">Medium</label>
+            
+                    <input type="radio" name="difficulty" id="diff-hard" value="Hard">
+                    <label for="diff-hard" class="pill">Hard</label>
+                </div>
+            </div>
+
+            <button id="btn-start" class="primary-btn">Start Game</button>
+        </section>
+
+        <section id="game-panel" class="panel hidden">
+            
+            <div class="scene">
+                <div class="card" id="game-card">
+                    <div class="card-face card-front">
+                        <h3>Clues</h3>
+                        <ul id="clue-list">
+                            </ul>
+                        <div class="difficulty-badge" id="diff-badge">Easy</div>
+                    </div>
+                    <div class="card-face card-back">
+                        <h3>Answer</h3>
+                        <h2 id="answer-name">Target</h2>
+                        <p id="answer-hint" class="hint-text"></p>
+                        <div class="meta-info">
+                            <span id="answer-cat"></span> • <span id="answer-country"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <button id="btn-reveal" class="action-btn">Reveal Answer</button>
+                <div id="decision-buttons" class="hidden">
+                    <button id="btn-correct" class="success-btn">I Guessed It</button>
+                    <button id="btn-wrong" class="danger-btn">Missed It</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="end-panel" class="panel hidden">
+            <div class="logo-container">
+                <h1 class="logo-text">Game Over</h1>
+            </div>
+            <p>Final Score: <span id="final-score" style="font-size: 3rem; font-weight: bold; color: var(--accent);">0</span></p>
+            <button id="btn-restart" class="primary-btn">Play Again</button>
+        </section>
+
+    </main>
+
+    <script src="data.js"></script>
+    <script src="game-engine.js"></script>
+    <script src="tests.js"></script>
+    <script src="ui-controller.js"></script>
+</body>
+</html>

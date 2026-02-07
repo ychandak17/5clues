@@ -1,0 +1,515 @@
+:root {
+    /* Theme Colors */
+    --bg-dark: #0f172a;      /* Deep Blue/Black */
+    --bg-darker: #020617;    /* Almost Black */
+    --card-face: #ffffff;    /* Stark White */
+    --text-main: #1e293b;    /* Dark Slate */
+    --text-light: #64748b;   /* Grey for hints */
+    
+    /* Neon Accents */
+    --accent: #6366f1;       /* Indigo */
+    --accent-glow: rgba(99, 102, 241, 0.5);
+    --success: #10b981;      /* Emerald */
+    --danger: #ef4444;       /* Red */
+    
+    /* Physics */
+    --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    --depth: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(circle at center, var(--bg-dark), var(--bg-darker));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Use dvh (dynamic viewport height) to account for mobile browser bars */
+    min-height: 100dvh; 
+    color: white;
+    overflow: hidden;
+}
+
+/* --- The Layout --- */
+
+.game-container {
+    width: 100%;
+    /* Max width prevents it from getting too wide on Desktop */
+    max-width: 450px; 
+    /* Max height ensures it fits on small phones without scrolling */
+    max-height: 100dvh;
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* --- Header & Stats --- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+header span {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+/* --- Logo Styling --- */
+
+.logo-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logo-number {
+    font-size: 5rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #fff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    line-height: 1;
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: -10px;
+    color: white;
+}
+
+.tagline {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+/* --- New Header Stats --- */
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#party-stats {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.team-score {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    opacity: 0.5;
+}
+
+.team-score.active-turn {
+    background: rgba(255,255,255,0.1);
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.team-a .t-label { color: #60a5fa; font-weight: bold; } /* Blue */
+.team-b .t-label { color: #f87171; font-weight: bold; } /* Red */
+
+.t-score { font-size: 1.5rem; font-weight: 900; }
+.vs-badge { font-weight: 900; color: #475569; font-size: 0.8rem; }
+
+/* --- Timer Bar --- */
+.timer-bar {
+    width: 100%;
+    height: 6px;
+    background: #334155;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.timer-fill {
+    height: 100%;
+    background: var(--accent);
+    width: 100%;
+    transition: width 1s linear;
+}
+
+/* --- Ready Screen --- */
+.ready-content {
+    text-align: center;
+    padding: 40px 0;
+}
+.turn-text { font-size: 3rem; margin: 10px 0; text-transform: uppercase; }
+.big-icon { font-size: 4rem; margin: 20px 0; animation: bounce 2s infinite; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* --- Misc --- */
+.huge-score { font-size: 4rem; font-weight: 900; color: white; display: block; margin: 20px 0; }
+h3 { margin-bottom: 10px; color: #94a3b8; font-size: 0.9rem; text-transform: uppercase; }
+
+/* --- Panels & Inputs --- */
+
+.panel {
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* 2. Only show the panel that has the 'active' class */
+.panel.active {
+    display: block; 
+    opacity: 1;
+    animation: fadeScale 0.4s ease-out;
+}
+
+/* 3. Helper to force hide elements */
+.hidden {
+    display: none !important;
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+select:focus {
+    border-color: var(--accent);
+}
+
+/* --- The 3D Card Structure --- */
+
+.scene {
+    perspective: 1200px; /* Stronger 3D effect */
+    width: 100%;
+    height: 400px; /* Taller card */
+    margin: 10px 0 30px 0;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy flip */
+    transform-style: preserve-3d;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: var(--card-face);
+    color: var(--text-main);
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+/* Card Front Styling */
+.card-front ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.card-front li {
+    font-size: 1.3rem;
+    padding: 12px 10px;
+    border-bottom: 1px solid #f1f5f9;
+    font-weight: 600;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+}
+
+.card-front li:before {
+    content: "•";
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-right: 10px;
+    line-height: 0;
+}
+
+.card-front li:last-child {
+    border-bottom: none;
+}
+
+.card-front h3 {
+    margin-top: 0;
+    color: var(--text-light);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Card Back Styling */
+.card-back {
+    transform: rotateY(180deg);
+    background: #f8fafc; /* Slightly off-white */
+    border: 4px solid var(--accent); /* colored border */
+}
+
+.card-back h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: var(--text-main);
+}
+
+.hint-text {
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.meta-info {
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: #e0e7ff;
+    color: var(--accent);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* --- Badges --- */
+
+.difficulty-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #f1f5f9;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* --- Buttons --- */
+
+button, 
+.pill, 
+input, 
+select {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation; /* Improves tap response speed */
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-btn {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.primary-btn:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--accent-glow);
+}
+
+.action-btn {
+    background: white;
+    color: var(--text-main);
+    border: 1px solid transparent;
+}
+
+.action-btn:hover {
+    background: #f8fafc;
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* Decision Buttons */
+.success-btn {
+    background: var(--success);
+    color: white;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+
+.danger-btn {
+    background: var(--danger);
+    color: white;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+}
+
+.hidden { display: none !important; }
+
+#decision-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Animations --- */
+
+@keyframes fadeScale {
+    from { 
+        opacity: 0; 
+        transform: scale(0.95); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+
+/* Container to center the pills */
+.pill-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.pill-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05); /* Subtle background container */
+    padding: 5px;
+    border-radius: 50px; /* Fully rounded container */
+}
+
+/* Hide the actual radio input dots */
+.pill-group input[type="radio"] {
+    display: none;
+}
+
+/* The Pill Style (Default State) */
+.pill {
+    padding: 10px 20px;
+    border-radius: 50px; /* Pill shape */
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #94a3b8; /* Dim text */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    user-select: none;
+}
+
+/* Hover State */
+.pill:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Selected State (The "Toggle" Effect) */
+.pill-group input[type="radio"]:checked + .pill {
+    background: var(--accent); /* Uses your Indigo theme color */
+    color: white;
+    box-shadow: 0 0 15px var(--accent-glow);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+    
+    /* Shrink the logo on phones so it doesn't take up 50% of the screen */
+    .logo-number {
+        font-size: 3.5rem;
+    }
+    .logo-text {
+        font-size: 1.5rem;
+    }
+    .tagline {
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Make the card slightly shorter to fit buttons below it */
+    .scene {
+        height: 320px; 
+        margin: 10px 0 20px 0;
+    }
+    
+    /* Adjust internal card padding */
+    .card-face {
+        padding: 20px;
+    }
+
+    /* Make list items smaller to fit 5 clues comfortably */
+    .card-front li {
+        font-size: 1.1rem; 
+        padding: 10px 5px;
+    }
+    
+    /* Stack the pill toggles nicely if screen is very narrow */
+    .pill-group {
+        gap: 5px;
+    }
+    
+    .pill {
+        padding: 8px 16px; /* Slightly smaller touch targets */
+        font-size: 0.85rem;
+    }
+}
+
+/* Fix for very small screens (like iPhone SE or foldables) */
+@media (max-height: 700px) {
+    .logo-container {
+        display: none; /* Hide logo on tiny screens during gameplay to save space */
+    }
+    .scene {
+        height: 300px;
+    }
+}
