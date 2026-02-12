@@ -1,8 +1,8 @@
 /* tests.js */
-function runTests() {
+function runTests(data) {
     console.group("TDD Unit Tests");
     
-    const engine = new GameEngine(GAME_DATA);
+    const engine = new GameEngine(data);
     let passed = 0;
     let total = 0;
 

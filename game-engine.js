@@ -7,6 +7,7 @@ class GameEngine {
         this.score = 0;
         this.multipliers = { "Easy": 1, "Medium": 2, "Hard": 3 };
         this.baseScore = 10;
+        this.lives = 3;
     }
 
     initGame(difficultyFilter = "All") {
@@ -18,6 +19,7 @@ class GameEngine {
         this.shuffleDeck();
         this.currentIndex = 0;
         this.score = 0;
+        this.lives = 3;
     }
 
     shuffleDeck() {
@@ -52,5 +54,10 @@ class GameEngine {
     addScore(points) {
         this.score += points;
         return this.score;
+    }
+
+    loseLife() {
+        this.lives--;
+        return this.lives;
     }
 }

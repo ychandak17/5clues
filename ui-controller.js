@@ -1,9 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     // Initialize
-    const engine = new GameEngine(GAME_DATA);
+    // --- CHANGE START ---
+    // 1. Fetch data asynchronously instead of using global GAME_DATA
+    const gameData = await loadGameData();
     
+    // 2. Initialize Engine with the fetched data
+    const engine = new GameEngine(gameData);
+    // --- CHANGE END ---
+
     // Run Tests (Dev Mode - Check Console)
-    if (typeof runTests === 'function') runTests();
+    if (typeof runTests === 'function') runTests(gameData)
 
     // DOM Elements
     const views = {
@@ -14,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const els = {
         score: document.getElementById('score-display'),
+        lives: document.getElementById('lives-display'),
+        btnExit: document.getElementById('btn-exit'),
         finalScore: document.getElementById('final-score'),
         timer: document.getElementById('timer-display'),
         card: document.getElementById('game-card'),
@@ -31,9 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let timerInterval = null;
     let timeRemaining = 30;
     const TIME_LIMIT = 30;
-    let isProcessing = false; 
+    let isProcessing = false;
 
     // --- Navigation Functions ---
+
+    function renderLives(count) {
+        // Creates a string like "❤️❤️❤️" or "❤️" based on count
+        return '❤️'.repeat(Math.max(0, count)); 
+    }
 
     function switchView(viewName) {
         Object.values(views).forEach(el => el.classList.remove('active', 'hidden'));
@@ -43,11 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderCard(card) {
         // Reset card flip
         els.card.classList.remove('is-flipped');
-        
+
         // Populate Front
         els.clues.innerHTML = card.words.map(w => `<li>${w}</li>`).join('');
         els.diffBadge.textContent = card.difficulty;
-        
+
         // Color code badge based on difficulty
         const colors = { 'Easy': '#10b981', 'Medium': '#f59e0b', 'Hard': '#ef4444' };
         els.diffBadge.style.color = colors[card.difficulty] || '#64748b';
@@ -67,13 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(timerInterval);
         timeRemaining = TIME_LIMIT;
         els.timer.textContent = timeRemaining;
-        
+
         timerInterval = setInterval(() => {
             timeRemaining--;
             els.timer.textContent = timeRemaining;
             if (timeRemaining <= 0) {
                 clearInterval(timerInterval);
-                revealCard(true); 
+                revealCard(true);
             }
         }, 1000);
     }
@@ -87,14 +100,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleDecision(isCorrect) {
         if (isProcessing) return;
-        isProcessing = true; 
+        isProcessing = true;
 
         if (isCorrect) {
             const points = engine.calculateScore(timeRemaining, engine.currentCard.difficulty);
             engine.addScore(points);
             els.score.textContent = engine.score;
+        } else {
+            // --- ADD THIS BLOCK ---
+            const remaining = engine.loseLife();
+            els.lives.textContent = renderLives(remaining);
+            if (remaining <= 0) {
+                endGame();
+                isProcessing = false; // Reset lock
+                return; // Stop here, don't show next card
+            }
         }
-
         // Delay for visual feedback
         setTimeout(() => {
             if (engine.hasNext) {
@@ -104,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 endGame();
             }
-            isProcessing = false; 
+            isProcessing = false;
         }, 400); // 400ms is snappy enough
     }
 
@@ -112,18 +133,24 @@ document.addEventListener('DOMContentLoaded', () => {
         // NEW: Get difficulty from the radio buttons (Pills)
         const diffInput = document.querySelector('input[name="difficulty"]:checked');
         const diff = diffInput ? diffInput.value : "All";
-        
+
         engine.initGame(diff);
-        
+
         if (engine.deck.length === 0) {
             alert("No cards found for this difficulty.");
             return;
         }
 
         els.score.textContent = 0;
+        els.lives.textContent = renderLives(3)
         renderCard(engine.currentCard);
         switchView('game');
         startTimer();
+    }
+
+    function exitGame() {
+        clearInterval(timerInterval); // Stop the timer
+        switchView('setup');          // Go back to main menu
     }
 
     function endGame() {
@@ -135,13 +162,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Event Listeners ---
 
     document.getElementById('btn-start').addEventListener('click', startGame);
-    
+
     document.getElementById('btn-restart').addEventListener('click', () => {
         switchView('setup');
     });
 
     els.btnReveal.addEventListener('click', () => revealCard(false));
-
+    els.btnExit.addEventListener('click', exitGame);
     document.getElementById('btn-correct').addEventListener('click', () => handleDecision(true));
     document.getElementById('btn-wrong').addEventListener('click', () => handleDecision(false));
+    
 });
