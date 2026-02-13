@@ -1,708 +1,1678 @@
 [
-    {
-        "name": "Game of Thrones",
-        "hint": "It was the most popular TV show produced by HBO",
-        "category": "TV Show",
-        "country": "US",
-        "words": [
-            "Dragon",
-            "Westeros",
-            "King",
-            "Throne",
-            "Egg"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Eiffel Tower",
-        "hint": "Iron lady of this romantic city.",
-        "category": "Landmark",
-        "country": "France",
-        "words": [
-            "Paris",
-            "Steel",
-            "Height",
-            "Monument",
-            "Gustave"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Quantum Mechanics",
-        "hint": "Physics at the smallest scales.",
-        "category": "Science",
-        "country": "Global",
-        "words": [
-            "Schrodinger",
-            "Cat",
-            "Uncertainty",
-            "Wave",
-            "Particle"
-        ],
-        "difficulty": "Hard"
-    },
-    {
-        "name": "Sushi",
-        "hint": "Vinegared rice with raw ingredients.",
-        "category": "Food",
-        "country": "Japan",
-        "words": [
-            "Fish",
-            "Roll",
-            "Wasabi",
-            "Soy",
-            "Seaweed"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "Inception",
-        "hint": "Dreams inside dreams",
-        "category": "Movies",
-        "words": [
-            "Dream",
-            "Heist",
-            "Totem",
-            "Mind",
-            "Layers"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Titanic",
-        "hint": "Famous ship tragedy",
-        "category": "Movies",
-        "words": [
-            "Ship",
-            "Iceberg",
-            "Ocean",
-            "Love",
-            "Sink"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Matrix",
-        "hint": "Reality is questioned",
-        "category": "Movies",
-        "words": [
-            "Simulation",
-            "Code",
-            "Neo",
-            "Reality",
-            "Choice"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "Gladiator",
-        "hint": "Roman revenge story",
-        "category": "Movies",
-        "words": [
-            "Arena",
-            "Rome",
-            "Warrior",
-            "Emperor",
-            "Revenge"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Interstellar",
-        "hint": "Space and time drama",
-        "category": "Movies",
-        "words": [
-            "Space",
-            "Time",
-            "Gravity",
-            "Planet",
-            "Father"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "Jaws",
-        "hint": "Shark terror film",
-        "category": "Movies",
-        "words": [
-            "Shark",
-            "Beach",
-            "Fear",
-            "Ocean",
-            "Hunt"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Avatar",
-        "hint": "Blue alien world",
-        "category": "Movies",
-        "words": [
-            "Pandora",
-            "Aliens",
-            "Nature",
-            "Conflict",
-            "Humans"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Rocky",
-        "hint": "Underdog boxer",
-        "category": "Movies",
-        "words": [
-            "Boxing",
-            "Training",
-            "Fight",
-            "Champion",
-            "Grit"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Godfather",
-        "hint": "Crime family saga",
-        "category": "Movies",
-        "words": [
-            "Mafia",
-            "Family",
-            "Power",
-            "Crime",
-            "Respect"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "JurassicPark",
-        "hint": "Dinosaurs revived",
-        "category": "Movies",
-        "words": [
-            "Dinosaurs",
-            "Island",
-            "Science",
-            "Chaos",
-            "Park"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Gravity",
-        "hint": "Force of attraction",
-        "category": "Science",
-        "words": [
-            "Mass",
-            "Pull",
-            "Force",
-            "Space",
-            "Fall"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Evolution",
-        "hint": "Change of species",
-        "category": "Science",
-        "words": [
-            "Species",
-            "Mutation",
-            "Selection",
-            "Adaptation",
-            "Genes"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "Photosynthesis",
-        "hint": "Plants make food",
-        "category": "Science",
-        "words": [
-            "Plants",
-            "Sunlight",
-            "Energy",
-            "Oxygen",
-            "Leaves"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Atom",
-        "hint": "Basic unit of matter",
-        "category": "Science",
-        "words": [
-            "Proton",
-            "Neutron",
-            "Electron",
-            "Nucleus",
-            "Matter"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Relativity",
-        "hint": "Theory by Einstein",
-        "category": "Science",
-        "words": [
-            "Time",
-            "Space",
-            "Light",
-            "Motion",
-            "Einstein"
-        ],
-        "difficulty": "Hard"
-    },
-    {
-        "name": "DNA",
-        "hint": "Genetic blueprint",
-        "category": "Science",
-        "words": [
-            "Genes",
-            "Helix",
-            "Inheritance",
-            "Cells",
-            "Code"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "BlackHole",
-        "hint": "Extreme gravity object",
-        "category": "Science",
-        "words": [
-            "Gravity",
-            "Singularity",
-            "Space",
-            "Light",
-            "Collapse"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "Electricity",
-        "hint": "Flow of charge",
-        "category": "Science",
-        "words": [
-            "Current",
-            "Voltage",
-            "Power",
-            "Energy",
-            "Circuit"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Virus",
-        "hint": "Microscopic pathogen",
-        "category": "Science",
-        "words": [
-            "Infection",
-            "Cells",
-            "Spread",
-            "Disease",
-            "Replication"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Quantum",
-        "hint": "Physics of small scale",
-        "category": "Science",
-        "words": [
-            "Particles",
-            "Uncertainty",
-            "Probability",
-            "Wave",
-            "Planck"
-        ],
-        "difficulty": "Hard"
-    },
-    {
-        "name": "WorldWarTwo",
-        "hint": "Global conflict",
-        "category": "History",
-        "words": [
-            "Allies",
-            "Axis",
-            "Hitler",
-            "Battles",
-            "Europe"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "FrenchRevolution",
-        "hint": "Uprising in France",
-        "category": "History",
-        "words": [
-            "Monarchy",
-            "Guillotine",
-            "Revolt",
-            "Liberty",
-            "Paris"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "IndustrialRevolution",
-        "hint": "Machine age begins",
-        "category": "History",
-        "words": [
-            "Factories",
-            "Steam",
-            "Labor",
-            "Cities",
-            "Production"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "ColdWar",
-        "hint": "Ideological rivalry",
-        "category": "History",
-        "words": [
-            "USA",
-            "USSR",
-            "Nuclear",
-            "Tension",
-            "Espionage"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Renaissance",
-        "hint": "Cultural rebirth",
-        "category": "History",
-        "words": [
-            "Art",
-            "Science",
-            "Italy",
-            "Humanism",
-            "Revival"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "RomanEmpire",
-        "hint": "Ancient superpower",
-        "category": "History",
-        "words": [
-            "Legions",
-            "Caesar",
-            "Empire",
-            "Expansion",
-            "Law"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "AmericanRevolution",
-        "hint": "Independence movement",
-        "category": "History",
-        "words": [
-            "Colonies",
-            "Taxation",
-            "Britain",
-            "Freedom",
-            "War"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "MongolEmpire",
-        "hint": "Largest land empire",
-        "category": "History",
-        "words": [
-            "Genghis",
-            "Horses",
-            "Conquest",
-            "Asia",
-            "Expansion"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "BerlinWall",
-        "hint": "Divided a city",
-        "category": "History",
-        "words": [
-            "Germany",
-            "Division",
-            "Concrete",
-            "ColdWar",
-            "Fall"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "AncientEgypt",
-        "hint": "Civilization of Nile",
-        "category": "History",
-        "words": [
-            "Pyramids",
-            "Pharaoh",
-            "Nile",
-            "Mummies",
-            "Gods"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "MountEverest",
-        "hint": "Highest peak",
+  {
+    "name": "Eiffel Tower",
+    "hint": "Iron lady of this romantic city.",
+    "category": "Landmark",
+    "country": "France",
+    "words": [
+      "Paris",
+      "Steel",
+      "Height",
+      "Monument",
+      "Gustave"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Quantum Mechanics",
+    "hint": "Physics at the smallest scales.",
+    "category": "Science",
+    "country": "Global",
+    "words": [
+      "Schrodinger",
+      "Cat",
+      "Uncertainty",
+      "Wave",
+      "Particle"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "name": "Sushi",
+    "hint": "Vinegared rice with raw ingredients.",
+    "category": "Food",
+    "country": "Japan",
+    "words": [
+      "Fish",
+      "Roll",
+      "Wasabi",
+      "Soy",
+      "Seaweed"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Inception",
+    "hint": "Dreams inside dreams",
+    "category": "Movies",
+    "words": [
+      "Dream",
+      "Heist",
+      "Totem",
+      "Mind",
+      "Layers"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Titanic",
+    "hint": "Famous ship tragedy",
+    "category": "Movies",
+    "words": [
+      "Ship",
+      "Iceberg",
+      "Ocean",
+      "Love",
+      "Sink"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Matrix",
+    "hint": "Reality is questioned",
+    "category": "Movies",
+    "words": [
+      "Simulation",
+      "Code",
+      "Neo",
+      "Reality",
+      "Choice"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Gladiator",
+    "hint": "Roman revenge story",
+    "category": "Movies",
+    "words": [
+      "Arena",
+      "Rome",
+      "Warrior",
+      "Emperor",
+      "Revenge"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Interstellar",
+    "hint": "Space and time drama",
+    "category": "Movies",
+    "words": [
+      "Space",
+      "Time",
+      "Gravity",
+      "Planet",
+      "Father"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Jaws",
+    "hint": "Shark terror film",
+    "category": "Movies",
+    "words": [
+      "Shark",
+      "Beach",
+      "Fear",
+      "Ocean",
+      "Hunt"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Avatar",
+    "hint": "Blue alien world",
+    "category": "Movies",
+    "words": [
+      "Pandora",
+      "Aliens",
+      "Nature",
+      "Conflict",
+      "Humans"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Rocky",
+    "hint": "Underdog boxer",
+    "category": "Movies",
+    "words": [
+      "Boxing",
+      "Training",
+      "Fight",
+      "Champion",
+      "Grit"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Godfather",
+    "hint": "Crime family saga",
+    "category": "Movies",
+    "words": [
+      "Mafia",
+      "Family",
+      "Power",
+      "Crime",
+      "Respect"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Jurassic Park",
+    "hint": "Dinosaurs revived",
+    "category": "Movies",
+    "words": [
+      "Dinosaurs",
+      "Island",
+      "Science",
+      "Chaos",
+      "Park"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Gravity",
+    "hint": "Force of attraction",
+    "category": "Science",
+    "words": [
+      "Mass",
+      "Pull",
+      "Force",
+      "Space",
+      "Fall"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Evolution",
+    "hint": "Change of species",
+    "category": "Science",
+    "words": [
+      "Species",
+      "Mutation",
+      "Selection",
+      "Adaptation",
+      "Genes"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Photosynthesis",
+    "hint": "Plants make food",
+    "category": "Science",
+    "words": [
+      "Plants",
+      "Sunlight",
+      "Energy",
+      "Oxygen",
+      "Leaves"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Atom",
+    "hint": "Basic unit of matter",
+    "category": "Science",
+    "words": [
+      "Proton",
+      "Neutron",
+      "Electron",
+      "Nucleus",
+      "Matter"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Relativity",
+    "hint": "Theory by Einstein",
+    "category": "Science",
+    "words": [
+      "Time",
+      "Space",
+      "Light",
+      "Motion",
+      "Einstein"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "name": "DNA",
+    "hint": "Genetic blueprint",
+    "category": "Science",
+    "words": [
+      "Genes",
+      "Helix",
+      "Inheritance",
+      "Cells",
+      "Code"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Black Hole",
+    "hint": "Extreme gravity object",
+    "category": "Science",
+    "words": [
+      "Gravity",
+      "Singularity",
+      "Space",
+      "Light",
+      "Collapse"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Electricity",
+    "hint": "Flow of charge",
+    "category": "Science",
+    "words": [
+      "Current",
+      "Voltage",
+      "Power",
+      "Energy",
+      "Circuit"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Virus",
+    "hint": "Microscopic pathogen",
+    "category": "Science",
+    "words": [
+      "Infection",
+      "Cells",
+      "Spread",
+      "Disease",
+      "Replication"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Quantum",
+    "hint": "Physics of small scale",
+    "category": "Science",
+    "words": [
+      "Particles",
+      "Uncertainty",
+      "Probability",
+      "Wave",
+      "Planck"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "name": "World War Two",
+    "hint": "Global conflict",
+    "category": "History",
+    "words": [
+      "Allies",
+      "Axis",
+      "Hitler",
+      "Battles",
+      "Europe"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "French Revolution",
+    "hint": "Uprising in France",
+    "category": "History",
+    "words": [
+      "Monarchy",
+      "Guillotine",
+      "Revolt",
+      "Liberty",
+      "Paris"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Industrial Revolution",
+    "hint": "Machine age begins",
+    "category": "History",
+    "words": [
+      "Factories",
+      "Steam",
+      "Labor",
+      "Cities",
+      "Production"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Cold War",
+    "hint": "Ideological rivalry",
+    "category": "History",
+    "words": [
+      "USA",
+      "USSR",
+      "Nuclear",
+      "Tension",
+      "Espionage"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Renaissance",
+    "hint": "Cultural rebirth",
+    "category": "History",
+    "words": [
+      "Art",
+      "Science",
+      "Italy",
+      "Humanism",
+      "Revival"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Roman Empire",
+    "hint": "Ancient superpower",
+    "category": "History",
+    "words": [
+      "Legions",
+      "Caesar",
+      "Empire",
+      "Expansion",
+      "Law"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "American Revolution",
+    "hint": "Independence movement",
+    "category": "History",
+    "words": [
+      "Colonies",
+      "Taxation",
+      "Britain",
+      "Freedom",
+      "War"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Mongol Empire",
+    "hint": "Largest land empire",
+    "category": "History",
+    "words": [
+      "Genghis",
+      "Horses",
+      "Conquest",
+      "Asia",
+      "Expansion"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Berlin Wall",
+    "hint": "Divided a city",
+    "category": "History",
+    "words": [
+      "Germany",
+      "Division",
+      "Concrete",
+      "ColdWar",
+      "Fall"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Ancient Egypt",
+    "hint": "Civilization of Nile",
+    "category": "History",
+    "words": [
+      "Pyramids",
+      "Pharaoh",
+      "Nile",
+      "Mummies",
+      "Gods"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Mount Everest",
+    "hint": "Highest peak",
+    "category": "Geography",
+    "words": [
+      "Mountain",
+      "Nepal",
+      "Climbing",
+      "Altitude",
+      "Himalayas"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Sahara",
+    "hint": "Largest hot desert",
+    "category": "Geography",
+    "words": [
+      "Desert",
+      "Africa",
+      "Sand",
+      "Heat",
+      "Dunes"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Amazon River",
+    "hint": "Largest river",
+    "category": "Geography",
+    "words": [
+      "River",
+      "Brazil",
+      "Rainforest",
+      "Water",
+      "Basin"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Pacific Ocean",
+    "hint": "Largest ocean",
+    "category": "Geography",
+    "words": [
+      "Ocean",
+      "Waves",
+      "Depth",
+      "Islands",
+      "Water"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Antarctica",
+    "hint": "Frozen continent",
+    "category": "Geography",
+    "words": [
+      "Ice",
+      "Cold",
+      "Penguins",
+      "South",
+      "Glaciers"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Great Wall",
+    "hint": "Ancient barrier",
+    "category": "Geography",
+    "words": [
+      "China",
+      "Defense",
+      "Stone",
+      "Length",
+      "History"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Grand Canyon",
+    "hint": "Famous canyon",
+    "category": "Geography",
+    "words": [
+      "Canyon",
+      "Erosion",
+      "River",
+      "Arizona",
+      "Cliffs"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Equator",
+    "hint": "Imaginary line",
+    "category": "Geography",
+    "words": [
+      "Latitude",
+      "Earth",
+      "Middle",
+      "Climate",
+      "Heat"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Mediterranean",
+    "hint": "Historic sea",
+    "category": "Geography",
+    "words": [
+      "Sea",
+      "Europe",
+      "Trade",
+      "Coasts",
+      "History"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Iceland",
+    "hint": "Land of fire and ice",
+    "category": "Geography",
+    "words": [
+      "Volcanoes",
+      "Glaciers",
+      "Nordic",
+      "Islands",
+      "Cold"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Michael Jackson",
+    "hint": "King of pop",
+    "category": "Pop Culture",
+    "words": [
+      "Music",
+      "Dance",
+      "Glove",
+      "Moonwalk",
+      "Fame"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Marvel",
+    "hint": "Superhero universe",
+    "category": "Pop Culture",
+    "words": [
+      "Heroes",
+      "Comics",
+      "Avengers",
+      "Powers",
+      "Villains"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Harry Potter",
+    "hint": "Wizard series",
+    "category": "Pop Culture",
+    "words": [
+      "Magic",
+      "Wizard",
+      "School",
+      "Spells",
+      "Fantasy"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Beatles",
+    "hint": "Iconic band",
+    "category": "Pop Culture",
+    "words": [
+      "Music",
+      "Band",
+      "Liverpool",
+      "Songs",
+      "Fans"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Instagram",
+    "hint": "Photo sharing app",
+    "category": "Pop Culture",
+    "words": [
+      "Photos",
+      "Likes",
+      "Stories",
+      "Social",
+      "Filters"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Star Wars",
+    "hint": "Space saga",
+    "category": "Pop Culture",
+    "words": [
+      "Jedi",
+      "Force",
+      "Galaxy",
+      "Empire",
+      "Lightsaber"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Elon Musk",
+    "hint": "Tech entrepreneur",
+    "category": "Pop Culture",
+    "words": [
+      "Tesla",
+      "Space",
+      "Innovation",
+      "Mars",
+      "Wealth"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Game of Thrones",
+    "hint": "Epic fantasy show",
+    "category": "Pop Culture",
+    "words": [
+      "Dragon",
+      "Westeros",
+      "Throne",
+      "King",
+      "Winter"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Netflix",
+    "hint": "Streaming platform",
+    "category": "Pop Culture",
+    "words": [
+      "Streaming",
+      "Shows",
+      "Movies",
+      "Binge",
+      "Online"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Pokemon",
+    "hint": "Creature franchise",
+    "category": "Pop Culture",
+    "words": [
+      "Creatures",
+      "Battles",
+      "Trainer",
+      "Cards",
+      "Evolution"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Friends",
+    "hint": "Six friends living in New York",
+    "category": "TV Show",
+    "country": "US",
+    "words": [
+      "Coffee",
+      "Apartment",
+      "Ross",
+      "Smelly Cat",
+      "Central Perk"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Breaking Bad",
+    "hint": "Chemistry teacher turns drug dealer",
+    "category": "TV Show",
+    "country": "US",
+    "words": [
+      "Meth",
+      "Heisenberg",
+      "Blue",
+      "Jessie",
+      "RV"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Stranger Things",
+    "hint": "Kids fight monsters in the 80s",
+    "category": "TV Show",
+    "country": "US",
+    "words": [
+      "Eleven",
+      "Upside Down",
+      "Demogorgon",
+      "Bikes",
+      "Netflix"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Statue of Liberty",
+    "hint": "Gift from France to USA",
+    "category": "Landmark",
+    "country": "US",
+    "words": [
+      "Torch",
+      "New York",
+      "Copper",
+      "Freedom",
+      "Island"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Taj Mahal",
+    "hint": "White marble mausoleum",
+    "category": "Landmark",
+    "country": "India",
+    "words": [
+      "Love",
+      "Tomb",
+      "Agra",
+      "Dome",
+      "Shah Jahan"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Colosseum",
+    "hint": "Ancient Roman amphitheater",
+    "category": "Landmark",
+    "country": "Italy",
+    "words": [
+      "Gladiator",
+      "Rome",
+      "Fights",
+      "Ruins",
+      "Empire"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Big Bang",
+    "hint": "Origin of the universe",
+    "category": "Science",
+    "words": [
+      "Explosion",
+      "Expansion",
+      "Beginning",
+      "Theory",
+      "Cosmos"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Periodic Table",
+    "hint": "Chart of chemical elements",
+    "category": "Science",
+    "words": [
+      "Elements",
+      "Chemistry",
+      "Symbol",
+      "Atomic",
+      "Mendeleev"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Telescope",
+    "hint": "Tool to see stars",
+    "category": "Science",
+    "words": [
+      "Lens",
+      "Space",
+      "Stars",
+      "Galileo",
+      "Magnify"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Solar System",
+    "hint": "Sun and its planets",
+    "category": "Science",
+    "words": [
+      "Planets",
+      "Sun",
+      "Orbit",
+      "Mars",
+      "Jupiter"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Pizza",
+    "hint": "Round dough with toppings",
+    "category": "Food",
+    "country": "Italy",
+    "words": [
+      "Cheese",
+      "Tomato",
+      "Slice",
+      "Pepperoni",
+      "Oven"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Burger",
+    "hint": "Patty served in a bun",
+    "category": "Food",
+    "country": "US",
+    "words": [
+      "Beef",
+      "Fries",
+      "Bun",
+      "Cheese",
+      "Fast Food"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Chocolate",
+    "hint": "Sweet treat from cocoa",
+    "category": "Food",
+    "words": [
+      "Cocoa",
+      "Candy",
+      "Sugar",
+      "Milk",
+      "Dark"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "The Lion King",
+    "hint": "Disney lion prince",
+    "category": "Movies",
+    "words": [
+      "Simba",
+      "Africa",
+      "Circle",
+      "Scar",
+      "Hakuna Matata"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Forrest Gump",
+    "hint": "Life is like a box of chocolates",
+    "category": "Movies",
+    "words": [
+      "Run",
+      "Shrimp",
+      "Jenny",
+      "Tom Hanks",
+      "Vietnam"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Pulp Fiction",
+    "hint": "Cult classic by Tarantino",
+    "category": "Movies",
+    "words": [
+      "Dance",
+      "Royale",
+      "Suitcase",
+      "Violence",
+      "Ezekiel"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "name": "Moon Landing",
+    "hint": "First humans on lunar surface",
+    "category": "History",
+    "words": [
+      "Apollo",
+      "Armstrong",
+      "NASA",
+      "Flag",
+      "1969"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "The Crusades",
+    "hint": "Religious wars in middle ages",
+    "category": "History",
+    "words": [
+      "Knights",
+      "Jerusalem",
+      "Christian",
+      "Muslim",
+      "Holy Land"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "name": "Great Depression",
+    "hint": "Severe economic downturn",
+    "category": "History",
+    "words": [
+      "Crash",
+      "Stock Market",
+      "Poverty",
+      "1929",
+      "Unemployment"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Nile River",
+    "hint": "Longest river in Africa",
+    "category": "Geography",
+    "words": [
+      "Egypt",
+      "Water",
+      "Flow",
+      "Crocodile",
+      "Delta"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Dead Sea",
+    "hint": "Salt lake you float in",
+    "category": "Geography",
+    "words": [
+      "Salt",
+      "Float",
+      "Israel",
+      "Jordan",
+      "Lowest"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "name": "Alps",
+    "hint": "Major European mountain range",
+    "category": "Geography",
+    "words": [
+      "Mountains",
+      "Skiing",
+      "Snow",
+      "Switzerland",
+      "Europe"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Taylor Swift",
+    "hint": "Famous pop country singer",
+    "category": "Pop Culture",
+    "words": [
+      "Singer",
+      "Songs",
+      "Eras",
+      "Concert",
+      "Fans"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "TikTok",
+    "hint": "Short form video app",
+    "category": "Pop Culture",
+    "words": [
+      "Video",
+      "Dance",
+      "Viral",
+      "App",
+      "Trends"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "name": "YouTube",
+    "hint": "Online video platform",
+    "category": "Pop Culture",
+    "words": [
+      "Videos",
+      "Subscribe",
+      "Stream",
+      "Vlog",
+      "Google"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+        "name": "Niagara Falls",
+        "hint": "Famous waterfalls on US-Canada border",
         "category": "Geography",
         "words": [
-            "Mountain",
-            "Nepal",
-            "Climbing",
-            "Altitude",
-            "Himalayas"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Sahara",
-        "hint": "Largest hot desert",
-        "category": "Geography",
-        "words": [
-            "Desert",
-            "Africa",
-            "Sand",
-            "Heat",
-            "Dunes"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "AmazonRiver",
-        "hint": "Largest river",
-        "category": "Geography",
-        "words": [
-            "River",
-            "Brazil",
-            "Rainforest",
             "Water",
-            "Basin"
-        ],
-        "difficulty": "Medium"
-    },
-    {
-        "name": "PacificOcean",
-        "hint": "Largest ocean",
-        "category": "Geography",
-        "words": [
-            "Ocean",
-            "Waves",
-            "Depth",
-            "Islands",
-            "Water"
+            "Canada",
+            "New York",
+            "Maid of the Mist",
+            "Falls"
         ],
         "difficulty": "Easy"
     },
     {
-        "name": "Antarctica",
-        "hint": "Frozen continent",
+        "name": "Great Barrier Reef",
+        "hint": "Largest coral reef system",
+        "category": "Geography",
+        "words": [
+            "Coral",
+            "Australia",
+            "Ocean",
+            "Fish",
+            "Diving"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Mount Fuji",
+        "hint": "Iconic volcano in Japan",
+        "category": "Geography",
+        "words": [
+            "Japan",
+            "Volcano",
+            "Snow",
+            "Tokyo",
+            "Climb"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Panama Canal",
+        "hint": "Connects Atlantic and Pacific oceans",
+        "category": "Geography",
+        "words": [
+            "Locks",
+            "Ship",
+            "Shortcut",
+            "Central America",
+            "Engineering"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Bermuda Triangle",
+        "hint": "Mysterious area where ships disappear",
+        "category": "Geography",
+        "words": [
+            "Mystery",
+            "Ocean",
+            "Disappear",
+            "Plane",
+            "Atlantic"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Mount Kilimanjaro",
+        "hint": "Highest mountain in Africa",
+        "category": "Geography",
+        "words": [
+            "Tanzania",
+            "Africa",
+            "Snow",
+            "Volcano",
+            "Climb"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Galapagos Islands",
+        "hint": "Islands famous for unique wildlife",
+        "category": "Geography",
+        "words": [
+            "Darwin",
+            "Turtle",
+            "Evolution",
+            "Ecuador",
+            "Pacific"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Yellowstone",
+        "hint": "First national park in the world",
+        "category": "Geography",
+        "words": [
+            "Geyser",
+            "Bear",
+            "Old Faithful",
+            "Park",
+            "Wyoming"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Madagascar",
+        "hint": "Island nation off Africa",
+        "category": "Geography",
+        "words": [
+            "Lemur",
+            "Island",
+            "Africa",
+            "Movie",
+            "Biodiversity"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Greenland",
+        "hint": "World's largest island",
         "category": "Geography",
         "words": [
             "Ice",
+            "Denmark",
             "Cold",
-            "Penguins",
-            "South",
-            "Glaciers"
+            "Arctic",
+            "Glacier"
         ],
-        "difficulty": "Easy"
+        "difficulty": "Medium"
     },
     {
-        "name": "Great Wall",
-        "hint": "Ancient barrier",
+        "name": "Mississippi River",
+        "hint": "Major river in North America",
         "category": "Geography",
         "words": [
-            "China",
-            "Defense",
-            "Stone",
-            "Length",
-            "History"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Grand Canyon",
-        "hint": "Famous canyon",
-        "category": "Geography",
-        "words": [
-            "Canyon",
-            "Erosion",
             "River",
-            "Arizona",
-            "Cliffs"
+            "South",
+            "Mark Twain",
+            "USA",
+            "New Orleans"
         ],
         "difficulty": "Easy"
     },
     {
-        "name": "Equator",
-        "hint": "Imaginary line",
+        "name": "Andes Mountains",
+        "hint": "Longest continental mountain range",
         "category": "Geography",
         "words": [
-            "Latitude",
-            "Earth",
-            "Middle",
-            "Climate",
-            "Heat"
+            "South America",
+            "Inca",
+            "Mountains",
+            "Chile",
+            "Peru"
         ],
         "difficulty": "Medium"
     },
     {
-        "name": "Mediterranean",
-        "hint": "Historic sea",
+        "name": "Ganges River",
+        "hint": "Sacred river in India",
         "category": "Geography",
         "words": [
-            "Sea",
+            "India",
+            "Holy",
+            "River",
+            "Varanasi",
+            "Water"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Danube River",
+        "hint": "Europe's second longest river",
+        "category": "Geography",
+        "words": [
             "Europe",
-            "Trade",
-            "Coasts",
-            "History"
+            "River",
+            "Vienna",
+            "Blue",
+            "Budapest"
         ],
-        "difficulty": "Medium"
+        "difficulty": "Hard"
     },
     {
-        "name": "Iceland",
-        "hint": "Land of fire and ice",
+        "name": "Caribbean Sea",
+        "hint": "Tropical sea with many islands",
         "category": "Geography",
         "words": [
-            "Volcanoes",
-            "Glaciers",
-            "Nordic",
             "Islands",
-            "Cold"
+            "Pirates",
+            "Tropical",
+            "Beach",
+            "Cruise"
         ],
         "difficulty": "Easy"
     },
     {
-        "name": "Michael Jackson",
-        "hint": "King of pop",
-        "category": "Pop Culture",
+        "name": "Caspian Sea",
+        "hint": "Largest inland body of water",
+        "category": "Geography",
         "words": [
-            "Music",
-            "Dance",
-            "Glove",
-            "Moonwalk",
-            "Fame"
+            "Lake",
+            "Oil",
+            "Russia",
+            "Caviar",
+            "Salt"
         ],
-        "difficulty": "Easy"
+        "difficulty": "Hard"
     },
     {
-        "name": "Marvel",
-        "hint": "Superhero universe",
-        "category": "Pop Culture",
+        "name": "Lake Superior",
+        "hint": "Largest of the Great Lakes",
+        "category": "Geography",
         "words": [
-            "Heroes",
-            "Comics",
-            "Avengers",
-            "Powers",
-            "Villains"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Harry Potter",
-        "hint": "Wizard series",
-        "category": "Pop Culture",
-        "words": [
-            "Magic",
-            "Wizard",
-            "School",
-            "Spells",
-            "Fantasy"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Beatles",
-        "hint": "Iconic band",
-        "category": "Pop Culture",
-        "words": [
-            "Music",
-            "Band",
-            "Liverpool",
-            "Songs",
-            "Fans"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Instagram",
-        "hint": "Photo sharing app",
-        "category": "Pop Culture",
-        "words": [
-            "Photos",
-            "Likes",
-            "Stories",
-            "Social",
-            "Filters"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Star Wars",
-        "hint": "Space saga",
-        "category": "Pop Culture",
-        "words": [
-            "Jedi",
-            "Force",
-            "Galaxy",
-            "Empire",
-            "Lightsaber"
-        ],
-        "difficulty": "Easy"
-    },
-    {
-        "name": "Elon Musk",
-        "hint": "Tech entrepreneur",
-        "category": "Pop Culture",
-        "words": [
-            "Tesla",
-            "Space",
-            "Innovation",
-            "Mars",
-            "Wealth"
+            "Great Lakes",
+            "Freshwater",
+            "USA",
+            "Canada",
+            "Water"
         ],
         "difficulty": "Medium"
     },
     {
-        "name": "Game Of Thrones",
-        "hint": "Epic fantasy show",
-        "category": "Pop Culture",
+        "name": "Mariana Trench",
+        "hint": "Deepest part of the ocean",
+        "category": "Geography",
         "words": [
-            "Dragon",
-            "Westeros",
-            "Throne",
-            "King",
-            "Winter"
+            "Deep",
+            "Ocean",
+            "Pressure",
+            "Challenger Deep",
+            "Pacific"
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "name": "English Channel",
+        "hint": "Separates UK from France",
+        "category": "Geography",
+        "words": [
+            "Tunnel",
+            "Swim",
+            "France",
+            "England",
+            "Water"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Alaska",
+        "hint": "Largest US state by area",
+        "category": "Geography",
+        "words": [
+            "Cold",
+            "Snow",
+            "Bears",
+            "USA",
+            "Wild"
         ],
         "difficulty": "Easy"
     },
     {
-        "name": "Netflix",
-        "hint": "Streaming platform",
-        "category": "Pop Culture",
+        "name": "Hawaii",
+        "hint": "US island state in Pacific",
+        "category": "Geography",
         "words": [
-            "Streaming",
-            "Shows",
-            "Movies",
-            "Binge",
-            "Online"
+            "Aloha",
+            "Beach",
+            "Volcano",
+            "Surf",
+            "Island"
         ],
         "difficulty": "Easy"
     },
     {
-        "name": "Pokemon",
-        "hint": "Creature franchise",
-        "category": "Pop Culture",
+        "name": "Australian Outback",
+        "hint": "Remote interior of Australia",
+        "category": "Geography",
         "words": [
-            "Creatures",
-            "Battles",
-            "Trainer",
-            "Cards",
-            "Evolution"
+            "Desert",
+            "Kangaroos",
+            "Red",
+            "Dry",
+            "Bush"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Suez Canal",
+        "hint": "Waterway connecting Mediterranean and Red Sea",
+        "category": "Geography",
+        "words": [
+            "Egypt",
+            "Ship",
+            "Trade",
+            "Shortcut",
+            "Canal"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Lake Baikal",
+        "hint": "Deepest lake in the world",
+        "category": "Geography",
+        "words": [
+            "Russia",
+            "Deep",
+            "Freshwater",
+            "Siberia",
+            "Lake"
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Gobi Desert",
+        "hint": "Large desert in Asia",
+        "category": "Geography",
+        "words": [
+            "Sand",
+            "China",
+            "Mongolia",
+            "Camel",
+            "Dry"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Vikings",
+        "hint": "Norse seafarers",
+        "category": "History",
+        "words": [
+            "Ship",
+            "Scandinavia",
+            "Raids",
+            "Thor",
+            "Horned Helmet"
         ],
         "difficulty": "Easy"
+    },
+    {
+        "name": "Black Death",
+        "hint": "Devastating plague in Europe",
+        "category": "History",
+        "words": [
+            "Plague",
+            "Rats",
+            "Fleas",
+            "Disease",
+            "Death"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Magna Carta",
+        "hint": "Document limiting King's power",
+        "category": "History",
+        "words": [
+            "King John",
+            "England",
+            "Rights",
+            "Law",
+            "1215"
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Reformation",
+        "hint": "Religious split from Catholic Church",
+        "category": "History",
+        "words": [
+            "Luther",
+            "Protestant",
+            "Church",
+            "95 Theses",
+            "Religion"
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Spanish Inquisition",
+        "hint": "Religious persecution in Spain",
+        "category": "History",
+        "words": [
+            "Torture",
+            "Catholic",
+            "Spain",
+            "Heretic",
+            "Queen Isabella"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Battle of Waterloo",
+        "hint": "Napoleon's final defeat",
+        "category": "History",
+        "words": [
+            "Napoleon",
+            "France",
+            "Duke of Wellington",
+            "War",
+            "1815"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Joan of Arc",
+        "hint": "French heroine and martyr",
+        "category": "History",
+        "words": [
+            "France",
+            "Saint",
+            "Burned",
+            "Hundred Years War",
+            "Orleans"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Henry VIII",
+        "hint": "King with six wives",
+        "category": "History",
+        "words": [
+            "Wives",
+            "Beheaded",
+            "England",
+            "Divorce",
+            "Tudor"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Chernobyl",
+        "hint": "Nuclear disaster in Ukraine",
+        "category": "History",
+        "words": [
+            "Nuclear",
+            "Radiation",
+            "Reactor",
+            "Ukraine",
+            "Disaster"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Victorian Era",
+        "hint": "Reign of Queen Victoria",
+        "category": "History",
+        "words": [
+            "Queen",
+            "England",
+            "Industrial",
+            "Empire",
+            "19th Century"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Stonehenge",
+        "hint": "Prehistoric stone circle",
+        "category": "History",
+        "words": [
+            "Stones",
+            "England",
+            "Druids",
+            "Circle",
+            "Ancient"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Battle of Hastings",
+        "hint": "Norman conquest of England",
+        "category": "History",
+        "words": [
+            "1066",
+            "William",
+            "Conqueror",
+            "England",
+            "Arrow"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Marie Antoinette",
+        "hint": "Last Queen before French Revolution",
+        "category": "History",
+        "words": [
+            "Cake",
+            "France",
+            "Queen",
+            "Guillotine",
+            "Versailles"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Russian Revolution",
+        "hint": "Bolshevik uprising",
+        "category": "History",
+        "words": [
+            "Lenin",
+            "Tsar",
+            "Communism",
+            "Red",
+            "1917"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Spanish Armada",
+        "hint": "Naval fleet sent against England",
+        "category": "History",
+        "words": [
+            "Ships",
+            "Spain",
+            "England",
+            "Elizabeth I",
+            "Defeat"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Hundred Years War",
+        "hint": "Long conflict between England and France",
+        "category": "History",
+        "words": [
+            "War",
+            "France",
+            "England",
+            "Century",
+            "Kings"
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Byzantine Empire",
+        "hint": "Eastern Roman Empire",
+        "category": "History",
+        "words": [
+            "Constantinople",
+            "East",
+            "Rome",
+            "Orthodox",
+            "Justinian"
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Irish Potato Famine",
+        "hint": "Mass starvation in Ireland",
+        "category": "History",
+        "words": [
+            "Potato",
+            "Hunger",
+            "Ireland",
+            "Blight",
+            "Emigration"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "War of the Roses",
+        "hint": "Civil war for English throne",
+        "category": "History",
+        "words": [
+            "Lancaster",
+            "York",
+            "Red",
+            "White",
+            "Flower"
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "name": "Catherine the Great",
+        "hint": "Empress of Russia",
+        "category": "History",
+        "words": [
+            "Russia",
+            "Empress",
+            "Power",
+            "Enlightenment",
+            "Palace"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Pompeii",
+        "hint": "City buried by volcano",
+        "category": "History",
+        "words": [
+            "Vesuvius",
+            "Ash",
+            "Roman",
+            "Volcano",
+            "Italy"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Alexander the Great",
+        "hint": "King of Macedonia who conquered",
+        "category": "History",
+        "words": [
+            "Conqueror",
+            "Empire",
+            "Macedonia",
+            "Greece",
+            "Horse"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Sparta",
+        "hint": "Warrior society in Greece",
+        "category": "History",
+        "words": [
+            "300",
+            "Warriors",
+            "Greece",
+            "Military",
+            "Thermopylae"
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "name": "Athens",
+        "hint": "Birthplace of democracy",
+        "category": "History",
+        "words": [
+            "Democracy",
+            "Greece",
+            "Philosophy",
+            "Parthenon",
+            "City"
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "name": "Gutenberg Press",
+        "hint": "Invention of movable type",
+        "category": "History",
+        "words": [
+            "Printing",
+            "Books",
+            "Bible",
+            "Invention",
+            "Germany"
+        ],
+        "difficulty": "Medium"
     }
+
 ]
